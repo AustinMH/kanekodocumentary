@@ -1,231 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Kaneko's Monumental Risk | A Documentary</title>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="One hundred and sixty characters worth of description. This appears in Google SERP. Most important keywords first. Least important keywords last. Jun Kaneko.">
     <meta name="author" content="Austin Munsch-Hayhurst">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:700,800" rel="stylesheet">
-    <style>
-        /* SETTINGS */
-        
-        html,
-        body {
-            height: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-        /*TYPOGRAPHY */
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        span {
-            font-family: 'Raleway', sans-serif;
-        }
-        
-        p,
-        a {
-            font-family: "Droid-Serif", serif;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h6,
-        span {
-            color: white;
-        }
-        
-        h1,
-        h2 {
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        
-        h1 {
-            font-size: 100%;
-        }
-        
-        h2 {
-            font-size 50%;
-        }
-        
-        .jumbotron h1,
-        h2 {
-            text-align: center;
-        }
-        
-        h3 {
-            color: #F3C715;
-            text-transform: uppercase;
-            font-weight: 800;
-            font-size: 600%;
-        }
-        
-        h4 {
-            padding-top: 3%;
-            padding-bottom: 3%;
-            padding-left: 90px;
-            margin-left: -20px;
-            margin-right: 70%;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 300%;
-            position: relative;
-            top: -10px;
-        }
-        
-        h5 {
-            font-size: 200%;
-            padding-top: 50px;
-        }
-        
-        h6 {
-            font-size: 200%;
-            margin-bottom: 10%;
-        }
-        
-        .video p {
-            font-size: 100%;
-            line-height: 300%;
-            color: #3E3E3E;
-        }
-        
-        p {
-            font-family: 'Droid-Serif', serif;
-            font-size: 215%;
-            color: #3E3E3E;
-            opacity: 90;
-        }
-        
-        #yellow {
-            background-color: #F3C715;
-        }
-        
-        #red {
-            background-color: #DA2026;
-        }
-        
-        #blue {
-            background-color: #00AEEF;
-        }
-        /* LAYOUT */
-        
-        .jumbotron {
-            background: url(media/kanekoOne.gif) no-repeat center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        
-        .jumbotron {
-            height: 100%;
-        }
-        
-        .container {
-            padding-top: 8%;
-            padding-bottom: 8%;
-        }
-        
-        #lightgray {
-            background-color: #F2F2F2;
-        }
-        
-        #scroll {
-            padding-top: 20%;
-            text-align: center;
-        }
-        
-        .videoWrapper {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 */
-            padding-top: 25px;
-            height: 0;
-        }
-        
-        .videoWrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .gallery {
-            height: 100%;
-        }
-        
-        .offset {
-            position: relative;
-            top: -50px;
-        }
-        
-        .footer {
-            margin-top: 300px;
-            text-align: center;
-            background-color: #502D91;
-        }
-        /* Decoration */
-        
-        .tileRow {
-            background-image: url(media/tile.png);
-            background-repeat: repeat-x;
-            background-position: 50% 40%;
-        }
-        /* Galleria */
-        
-        .galleria {
-            max-width: 1000px;
-            height: 600px;
-            background: #000;
-        }
-        
-        .footer a {
-            color: white;
-            font-family: 'Raleway', sans-serif;
-        }
-        
-        .footer img {
-            max-width: 300px;
-            margin: 50px auto 0px auto;
-        }
-        
-        .overlapper {
-            max-width: 480px;
-        }
-        
-        .offsetMore {
-            top: -58px;
-        }
-        
-        .imgLeft {
-            position: relative;
-            left: -120px;
-            top: -50px;
-            z-index: -1;
-        }
-        
-        .imgRight {
-            position: relative;
-            right: -160px;
-            top: 30px;
-            z-index: -1;
-            max-height: 500px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -233,7 +22,7 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
                     <h1>Kaneko's</h1>
                     <h2>Monumental Risk</h2>
                 </div>
@@ -243,7 +32,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 col-md-12">
+            <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="row tileRow offset offsetMore">
                     <h4></h4>
                 </div>
@@ -254,11 +43,11 @@
 
     <div class="intro">
         <div class="container">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <h3>how creative are you?</h3>
                 <img src="media/2010%20Jun%20working%20on%20proposal%20in%20his%20loft%20studio.JPG" class="imgLeft img-responsive overlapper">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <p>"How creative are you? It's up to you," says monumental artist Jun Kaneko. In the ancient Asian way of teaching, he inspires us by doing, not by instructing. You learn by example. Follow Jun Kaneko around the world in "Kaneko's Monumental Risk" as he explores the creative frontiers of ceramics, glass, bronze, and even opera stage design in cities like San Francisco, Kyoto, Puerto Vallarta, Shanghai and New York. Regardless of where you see his work–city parks, plazas, airports, theaters – his style and massive scale are unmistakably KANEKO.</p>
                 <br>
                 <p>Now, he is taking his greatest risk–the creation of three hours of projected animation on seven screens for the San Francisco Opera’s all new, six million dollar production of Mozart’s “Magic Flute.” Will his wildly abstract fusion of traditional Japanese art and American modernism work in an 18th Century German Opera? The over 3,000 patrons at the opera’s premier will decide. Has he finally gone too far? Or has he taken Mozart’s music into a magical new realm? Either way, Kaneko will inspire you to reflect on the nature of your own creativity.</p>
@@ -272,12 +61,9 @@
                 <h4 id="yellow">About</h4>
             </div>
             <div class="container">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-8 col-md-8 col-sm-8">
                     <p>For more than 30 years, Emmy Award winning producer, Joel Geyer, has been creating national PBS documentaries which include “Buffett and Gates Go Back to School,” "Coach Osborne –More than Winning," and the American Masters film “Willa Cather – The Road Is All.” Geyer Group Productions, LLC specializes in educational, multi-platform productions. For an example visit
                         <a href="http://www.virtualcather.org/" target="_blank">Willa Cather’s Virtual World.</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="media/2007-Completed-Heads-at-Mission-Clay.jpg" class="img-responsive imgRight">
                 </div>
             </div>
         </div>
@@ -289,21 +75,21 @@
                 <h4 id="blue">Video</h4>
             </div>
             <div class="container">
-                <div class="col-lg-4 col-md-4 col-md-4">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="videoWrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/8l3-RCddTDg" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <h5>Kaneko's Risks</h5>
                     <p>Simply put, Jun Kaneko likes to take risks. Monumental risks.</p>
                 </div>
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="videoWrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/ICSYOoG9OlM" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <h5>Kaneko's Aesthetics</h5>
                     <p>Kaneko has an opportunity to win over the audience to his abstract aesthetics.</p>
                 </div>
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="videoWrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/cNKBabEjayU" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -322,7 +108,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                         <div class="galleria img-responsive">
                             <img src="media/1984-Kanekos-first-Dangos-from-Omaha-Brickworks.jpg" data-title="1984 Kanekos first Dangos from Omaha Brickworks" data-description="">
                             <img src="media/1986-Polka-Dot-Sidewalk-Art-Museum-of-South-Texas.jpg" data-title="1986 Polka Dot Sidewalk Art Museum of South Texas" data-description="">
@@ -355,7 +141,7 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                     <h6>Watch Kaneko's Monumental Risk on PBS February 4th</h6>
                     <span><a href="mailto:joelgeyer@me.com">joelgeyer@me.com</a></span>
                     <img src="media/PastedGraphic-2.png" class="img-responsive">
@@ -364,8 +150,8 @@
         </div>
     </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="flowtype.js"></script>
     <script src="galleria/galleria-1.5.1.min.js"></script>
     <script>
         (function () {
@@ -375,6 +161,9 @@
             });
             Galleria.run('.galleria');
         }());
+    </script>
+    <script>
+        $('body').flowtype();
     </script>
 </body>
 

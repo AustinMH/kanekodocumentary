@@ -1,0 +1,270 @@
+/* SETTINGS */
+
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*TYPOGRAPHY: sizes and colors */
+
+
+/*
+
+** flowtype **
+
+*/
+
+body {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1.45;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: 'Raleway', sans-serif;
+}
+
+p,
+a {
+    font-family: "Droid-Serif", serif;
+}
+
+h1,
+h2,
+h3,
+h6,
+span {
+    color: white;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size 3em;
+}
+
+.jumbotron h1,
+h2 {
+    text-align: center;
+}
+
+h3 {
+    color: #F3C715;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+
+/*FIX THIS*/
+
+h4 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3em;
+    margin-left: -20px;
+    margin-right: 25em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1em;
+    position: relative;
+    top: -10px;
+}
+
+h5 {
+    font-size: .5em;
+    padding-top: 50px;
+}
+
+.videowrapper p {
+    font-size: .1em;
+}
+
+h6 {
+    font-size: .7em;
+    margin-bottom: 10%;
+}
+
+.video p {
+    font-size: .5em;
+    color: #3E3E3E;
+    opacity: 90;
+}
+
+p {
+    font-family: 'Droid-Serif', serif;
+    color: #3E3E3E;
+    opacity: 90;
+    font-size: .9em;
+}
+
+#yellow {
+    background-color: #F3C715;
+}
+
+#red {
+    background-color: #DA2026;
+}
+
+#blue {
+    background-color: #00AEEF;
+}
+
+.footer a {
+    font-size: .5em;
+}
+
+
+/* LAYOUT: 
+
+widths, heighths, paddings, margins, positions, displays, text-aligns, etc..
+
+for
+
+EVERYTHING, including TYPOGRAPHY*/
+
+.jumbotron {
+    background: url(media/kanekoOne.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron {
+    height: 100%;
+}
+
+.container {
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+#lightgray {
+    background-color: #F2F2F2;
+}
+
+#scroll {
+    padding-top: 20%;
+    text-align: center;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 50px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.gallery {
+    height: 100%;
+}
+
+.offset {
+    position: relative;
+    top: -50px;
+}
+
+.footer {
+    margin-top: 300px;
+    text-align: center;
+    background-color: #502D91;
+}
+
+
+/* Decoration */
+
+.tileRow {
+    background-image: url(media/tile.png);
+    background-repeat: repeat-x;
+    background-position: 50% 40%;
+}
+
+
+/* Galleria */
+
+.galleria {
+    max-width: 1000px;
+    height: 600px;
+    background: #000;
+}
+
+.footer a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer img {
+    max-width: 300px;
+    margin: 50px auto 0px auto;
+}
+
+.overlapper {
+    max-width: 480px;
+}
+
+.offsetMore {
+    top: -58px;
+}
+
+.imgLeft {
+    position: relative;
+    left: -120px;
+    top: -85px;
+    z-index: -1;
+}
+
+.imgRight {
+    position: relative;
+    right: -160px;
+    top: 30px;
+    z-index: -1;
+    max-height: 500px;
+}
+
+@media screen and (max-width: 767px) {
+    .video p {
+        font-size: .8em;
+    }
+    h5 {
+        font-size: 1em;
+    }
+}
